@@ -131,6 +131,7 @@ public class Vault extends JavaPlugin {
         sm = getServer().getServicesManager();
         // set defaults
         getConfig().addDefault("update-check", true);
+        getConfig().addDefault("silent-no-update", false);
         getConfig().options().copyDefaults(true);
         saveConfig();
         // Load Vault Addons
